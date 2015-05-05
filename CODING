@@ -1,3 +1,5 @@
+WORK IN PROGRESS!
+
 CODING for pitot flange version 0.9 -=15-05-2014=- JLJ
 Coding of standard flanges is based on features. When a new feature is added a new code is added to this file. Reference file  "basic.stl" can be found in "toprintmodels" repository folder.
 To view .stl you can use Meshlab that is freely available. Example of a whole flange coding at the end of this file. The code is additive, if a feature is not present a number of 0 equal to standard code feature length should be added.
