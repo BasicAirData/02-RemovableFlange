@@ -9,7 +9,8 @@
 ##Description##
 
 This repository is fo the 8mmESP BasicAirData removable flange, in particular the type 02
-The numbering procedure for derived parts is described into [coding](https://github.com/BasicAirData/01-FixationFlange/blob/master/CODING) file.
+
+The numbering procedure for derived parts is described into [coding](https://github.com/BasicAirData/02-RemovableFlange/blob/master/CODING) file.
 
 ##License##
 BasicAirData provides free software licensed under [GNU GPL v3.0](http://www.gnu.org/licenses/gpl-3.0.txt) General Public License
