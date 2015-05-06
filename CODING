@@ -1,39 +1,39 @@
-WORK IN PROGRESS!
+CODING FOR PITOT FLANGES FAMILY 02 REV -=06/05/2015=-
 
-CODING for pitot flange version 0.9 -=15-05-2014=- JLJ
-Coding of standard flanges is based on features. When a new feature is added a new code is added to this file. Reference file  "basic.stl" can be found in "toprintmodels" repository folder.
-To view .stl you can use Meshlab that is freely available. Example of a whole flange coding at the end of this file. The code is additive, if a feature is not present a number of 0 equal to standard code feature length should be added.
+
+Coding of standard flanges is based on features. When a new feature is added a new code is added to this file.The code is additive, if a feature is not present a number of 0 equal to standard code feature length should be added.
 Features and codes
 -Family name
 Length: two digits
-01 Pitot fixed with a rectangular flange as per “basic.stl"
+02 Removable flange
 -Fixation holes number
 Length: two digits
 02 Two holes
 04 Four holes
 -Probe diameter 
-Length: two digits, expressed in mm
-For instance if the probe nominal diameter is 8mm then we have "08"
+If the probe nominal diameter is 8mm then we have "08"
 -Footprint type
 Define the bolt pattern shape
 Length: one digit
-R for rectangular 
 C for circle
 -Footprint dimensions
 Length: six digits
-For a rectangular bolt pattern is the length of the longer side followed by the other side length in mm.
-For example is the rectangular bolt pattern is a 35x29 mm rectangle then we write "3529" 
+Circula bolt pattern, bolt circle diameterXhole dia YYYxYYY mm.
+Decimal point separator is dropped.
+024x425
 -Type of pressure ports
-Length: Eight digits
+Length: eigh digits
 First and second digit, static port type from the below table
-Fourth and fifth digit, parameter that describe the port features, read here below
-Sixth digit, total pressure port type from the below table
-Seventh and eighth, parameter that describe the port features, read here below
+Third and fourth digit, parameter that describe the port features, read here below
+Fifth and sixth digit total pressure port type from the below table
+Seventh and eight, parameter that describe the port features, read here below
+
 Pressure ports type table
 01 Barbed
  Specification digits are the rounded diameter of coupling in mm. If the measure is 3.6 it is possible to write 36
-02 Snap in, quick fitting
+02 Push-in, quick fitting
 Specification digits are the rounded diameter of coupling in mm. If the measure is 3.6 it is possible to write 36
+
 -Position of pressure ports
 Length: two digits
 Looking from the flange side to the pitot tip.
@@ -61,5 +61,5 @@ A=Non Symmetrical fixing
 S=Symmetrical fixing
 
 
-The basic flange for 8mm Pitot tube is then coded
-"010408R352901360136TTRS" This code will represent the 3D model file name.
+The basic removable flange for 8mm Pitot tube is then coded
+"020408C02442502500205AARS" This code will represent the 3D model file name.
